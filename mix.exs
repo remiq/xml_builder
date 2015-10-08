@@ -34,6 +34,9 @@ defmodule XmlBuilder.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:ex_doc, github: "elixir-lang/ex_doc"}]
+    [
+      {:earmark, "~> 0.1.17", only: :dev},
+      {:ex_doc, "~> 0.10.0", only: :dev}
+    ]
   end
 end
